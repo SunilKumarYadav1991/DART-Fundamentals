@@ -1,0 +1,21 @@
+Dart is statically typed language with syntax similar to Java
+
+DART have 2 types of compilation:
+1. Ahead Of Time (AOT)
+2. Just In Time (JIT)
+
+To compile a file simply use 
+$ dart filename.dart
+e.g. 
+$ dart playground.dart
+
+
+Comments are similar to c/C++/Java
+
+// This is single line Comments
+
+/*
+This is multiline comment
+*/
+
+/// Documentation 
