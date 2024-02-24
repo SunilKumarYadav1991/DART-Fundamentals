@@ -19,3 +19,6 @@ This is multiline comment
 */
 
 /// Documentation 
+
+Assert:
+To enable assert, use --enable-asserts cli flag. 

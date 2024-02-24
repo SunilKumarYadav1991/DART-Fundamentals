@@ -3,6 +3,7 @@
 
 void main() {
  
+ //---------------------------------------------------------------------------------------
  /* Fundamental data types
     int
     double
@@ -29,6 +30,9 @@ void main() {
 
   weakVariable =100.1;
   print ('weakVariable = $weakVariable');
+  
+  //---------------------------------------------------------------------------------------
+  // Strings in Dart
 
   var s1 ='This is string';
   var s2 = "This is another string";
@@ -42,5 +46,38 @@ void main() {
   print(s2);
   print(s3);
   print(s);
+
+  //---------------------------------------------------------------------------------------
+  // String to int/double conversion
+
+  var one = int.parse('1');
+  assert(one==1);
+
+  // String to double conversion
+  var onePointOne = double.parse('1.1');
+  assert(onePointOne == 1.1);                       // to enable assert, use --enable-asserts cli flag. 
+                                                    // If assert fails then it throws Unhandled exception
+
+  String oneAsString = 1.toString();                 // Since everything is object in dart, we can convert int to string via inbuild method.
+  //print('oneAsString: $oneAsString');
+  assert(oneAsString == '1'); 
+
+  String piAsString = 3.14159.toStringAsFixed(2);
+  assert(piAsString == '3.14'); 
+
+  //---------------------------------------------------------------------------------------
+  // Constant
+
+  const iConst = 0;                                  // int constant
+  const int iConst2 = 10;                            // int constant
+  //iConst =100;                                     // results in 'Error: Can't assign to the const variable 'iConst'.'
+  const strConst = 'This is str';                    // String constant
+
+  print('strConst: $strConst and runtime type:');
+  print(strConst.runtimeType);                      // String
+  print(iConst.runtimeType);                        // int
+
+  int num;                                          // if variable left un initialized, default is null
+  //print(num);                                     // compiler error: Error: Non-nullable variable 'num' must be assigned before it can be used.
 
 }
