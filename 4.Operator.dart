@@ -29,4 +29,40 @@ void main() {
   int x=100;
   var result = x%2 == 0? 'Even' : 'Odd';
   print('X is $result');
+
+  //---------------------------------------------------------------------------------------
+  // Type Test
+
+  var fnum =0.123;
+  if(fnum is double)
+     print('fnum is double');
+
+  //---------------------------------------------------------------------------------------
+  // If-else Conditional Statement
+
+  var guess = 13;
+
+  if(guess == 11)
+    print("You've gessed it right");
+  else if (guess%2 == 0)
+    print("You've entered even number");
+  else 
+    print("You've entered odd number");
+
+  //---------------------------------------------------------------------------------------
+  // Switch Conditional Statement
+
+  switch(guess%2){
+    case 1:
+      print("You've entered odd number");
+      break;
+    case 0:
+       print("You've entered even number");
+       break;
+    default:
+      print('confused');
+      
+
+  }
+
 }
