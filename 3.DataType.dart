@@ -80,6 +80,7 @@ void main() {
   int num;                                          // if variable left un initialized, default is null
   //print(num);                                     // compiler error: Error: Non-nullable variable 'num' must be assigned before it can be used.
 
-
+  // Note: Use a type test operator rather than runtimeType to test an object's type. 
+  // In production environments, the test 'object is Type' is more stable than the test 'object.runtimeType == Type'.
 
 }
